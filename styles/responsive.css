@@ -1,0 +1,496 @@
+:root {
+  --main-color: #3c928b;
+  --light-blue: #0c8ca0;
+  --third-color: #3d6e91;
+  --very-light-blue: #add8e6;
+  --secondary-color: #a14c70;
+  --comp-color: #9a4047;
+  --text-color-blk: rgb(36, 32, 32);
+  --main-color-transparent: rgba(64, 154, 147, 0.6);
+  --btn-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  --subtle-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --card-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  --linear-gradient: linear-gradient(
+    45deg,
+    var(--main-color),
+    var(--other-main-color)
+  );
+}
+
+/* smaller desktops - macbook air */
+
+@media (min-width: 991px) and (max-width: 1670px) {
+    
+  .banner-grid {
+    height: 600px;
+  }
+
+  .skiljer {
+    margin-bottom: -50px;
+  }
+
+  .skiljer-h2 {
+    margin-top: 160px;
+  }
+
+
+  .skiljer__picture {
+    width: 500px;
+  }
+
+  .counters {
+    justify-content: space-between;
+  }
+
+
+  .contact-container-1,
+  .contact-container-2,
+  .contact-container-3 {
+    width: 350px;
+    margin-right: 10px;
+  }
+
+  .facebook-feed-and-contact {
+    margin-top: 100px;
+  }
+
+}
+
+
+
+
+/*    tablet    */
+
+@media (min-width: 761px) and (max-width: 992px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+
+  }
+
+  header {
+    padding: 5px 5px 5px 5px;
+    justify-content: space-between;
+  }
+  .back-to-top-btn {
+    bottom: 330px;
+    right: 10px;
+  }
+
+  /* banner */
+
+  .banner-grid {
+    display: flex;
+    justify-content: center;
+    background-position: 40% 100%;
+    height: 600px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    margin: 70px 0px 50px 20px;
+  }
+
+  .banner-content p {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  /* skiljer */
+  .skiljer {
+    margin: -100px 20px 0 20px;
+    max-width: 550px;
+    align-self: center;
+  }
+
+  .skiljer__picture-container {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+  }
+
+  /* resultat */
+
+
+  .counters {
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: -30px;
+  }
+
+  /* footer */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+
+  /* hur funkar det */
+
+  .before-faq {
+    padding: 20px 20px;
+  }
+
+  .faq {
+    margin-left: 120px;
+  }
+
+
+
+  /* jobba hos oss */
+  /* form  */
+
+form {
+  align-self: center;
+  width: 470px;
+  margin: 80px 0px 150px 0px;
+}
+
+
+/* kontakta oss */
+
+
+.soodia-contact {
+  align-self: center;
+  max-width: 600px;
+}
+
+.contacts-1,
+.contacts-2,
+.contacts-3 {
+  width: 450px;
+}
+
+.contact-container-1,
+.contact-container-2,
+.contact-container-3 {
+
+  margin: 0 auto;
+}
+
+}
+
+
+
+
+
+
+/*   mobile   */
+
+@media (max-width: 760px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* header */
+
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: block;
+    align-self: center;
+  }
+  .responsive {
+    width: 100vw;
+    display: none;
+    background-color: var(--main-color);
+  }
+
+  .responsive li {
+    padding: 10px 0;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .nav-big-screen {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  nav ul a {
+    color: white;
+  }
+
+  a:hover,
+  a:focus {
+    color: white;
+  }
+
+  a:active {
+    color: var(--light-blue);
+  }
+
+  .responsive a {
+    font-weight: 400;
+  }
+
+  /* hero/banner */
+
+  .banner-grid {
+    display: flex;
+    justify-content: center;
+    background-position: 40% 100%;
+    height: 500px;
+    width: 100%;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 0 0 20px;
+    padding: 0;
+    height: 500px;
+    margin-top: 10px;
+  }
+
+  h1 {
+    max-width: 450px;
+    font-size: 31.25px;
+    align-content: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 1.75;
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.75;
+    font-weight: 400;
+    margin: 0 20px 0 20px;
+  }
+
+  .contact-in-text a {
+    font-weight: 400;
+  }
+
+  .jobba-hos-oss-p{
+    text-align: center;
+  }
+
+  .contact-in-text a:hover {
+    color: var(--light-blue);
+  }
+
+  .banner-h2 {
+    margin-bottom: -30px;
+  }
+
+  .banner-content p {
+    align-self: flex-start;
+    margin-top: -30px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .banner-btn,
+  .banner-btn-2 {
+    width: 150px;
+  }
+
+  .btn-container {
+    align-self: flex-start;
+    margin: 0 0 20px 0;
+  }
+
+  /* facebook and socials */
+
+  
+  .facebook {
+    display: none;
+  }
+
+  /* counters */
+
+  .resulatat-main {
+    width: 550px;
+    padding-top: 0px;
+  }
+
+  .counters {
+    flex-direction: column;
+    padding: 0;
+    height: 550px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+
+  #counter-1,
+  #counter-2,
+  #counter-3 {
+    padding: 30px 20px 20px 20px;
+  }
+
+  /* jobba med os */
+
+  .jobba-med-oss {
+    margin-top: 30px;
+  }
+
+  form {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  /* footer */
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer > * {
+    padding: 5px;
+  }
+
+
+  /* skiljer os */
+
+  .skiljer__picture {
+    max-width: 500px;
+    max-height: 300px;
+    display: none;
+  }
+
+  .skiljer__picture-2 {
+    max-width: 320px;
+    height: 150px;
+    margin-left: -300px;
+    display: none;
+  }
+
+  .skiljer-h2 {
+    margin: 100px 0 20px 20px;
+  }
+
+  .skiljer {
+    margin-bottom: -150px;
+  }
+
+
+  /* hur funkar det */
+
+  .before-faq {
+    max-height: 800px;
+  }
+
+  .faq {
+    margin: 0px;
+    align-self: flex-start;
+  }
+
+  .before-faq h2 {
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .faq-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .faq-img {
+    display: none;
+  }
+
+  .soodia-contact {
+    align-self: center;
+  }
+
+  .soodia-contact h2 {
+    margin: 0 0 20px 20px;
+    padding: 0;
+    font-size: 26px;
+  }
+
+  .soodia-contact p {
+    margin: 0 20px 0 20px;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 400;
+  }
+
+  .back-to-top-btn {
+    bottom: 280px;
+    right: 10px;
+  }
+
+  .edu {
+    align-self: flex-start;
+    margin: 20px 10px 15px 20px;
+  }
+
+  .contacts-1,
+  .contacts-2,
+  .contacts-3 {
+    width: 380px;
+    margin: 0;
+  }
+
+  .back-to-top-btn {
+    bottom: 250px;
+  }
+
+.contact-container-1,
+.contact-container-2,
+.contact-container-3 {
+  align-self: center;
+  margin: 30px;
+  max-width: 550px;
+}
+
+.contact-container-3 {
+  margin-bottom: 70px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

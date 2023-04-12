@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jobba hos Soodia</title>
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="styles/responsive.css" />
+    </head>
+
+    <body>
+        <main>
+            <!-- header  -->
+            <header>
+                <a class="logo-img" href="./index.html">
+                    <img
+                        class="main-logo"
+                        src="styles/img/cropped-soodia-logo_small-black.png"
+                        alt="Soodia logo"
+                        width="170px"
+                        height="60px"
+                    />
+                </a>
+                <nav class="nav-big-screen">
+                    <ul>
+                        <li>
+                            <a class="nav-buton" href="./index.html">Hem</a>
+                        </li>
+                        <li>
+                            <a class="nav-buton" href="./hurfunkardet.html"
+                                >Hur funkar det?</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-buton" href="./jobbahososs.html"
+                                >Jobba hos oss</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-buton" href="./omoss.html"
+                                >Kontakt/Om oss</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <button class="menu-btn">Menu</button>
+            </header>
+
+            <nav class="responsive">
+                <ul>
+                    <li><a class="nav-buton" href="./index.html">Hem</a></li>
+                    <li>
+                        <a class="nav-buton" href="./hurfunkardet.html"
+                            >Hur funkar det?</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-buton" href="./jobbahososs.html"
+                            >Jobba hos oss</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-buton" href="./omoss.html"
+                            >Kontakt/Om oss</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="back-to-top-btn">
+                <i>
+                    <img
+                        src="./styles/img/outline_arrow_upward_white_24dp.png"
+                        alt="upward arrow"
+                    />
+                </i>
+            </button>
+
+            <!-- work with us intro  -->
+
+            <div class="jobba-med-oss">
+                <h2>Jobba hos oss!</h2>
+                <p>
+                    Vad roligt att du är intresserad att jobba hos oss, <br />
+                    gärna fyll i förmuläret nedan eller kontakta någon av oss
+                    direkt
+                    <span class="contact-in-text"
+                        ><a href="omoss.html">här</a>.</span
+                    >
+                </p>
+            </div>
+
+            <!-- form  -->
+
+            <form
+                class="my-form"
+                action="https://formspree.io/f/mgedaqpr"
+                method="POST"
+            >
+                <label for="namn">Namn och Efternamn</label>
+                <input
+                    type="text"
+                    name="namn"
+                    placeholder="Namn och Efternamn"
+                    required
+                    maxlength="50"
+                />
+                <label for="">E-mail</label>
+                <input
+                    type="email"
+                    name="_replyto"
+                    placeholder="exempel@exempel.se"
+                    required
+                    maxlength="50"
+                />
+                <label class="cv" for="cv">CV</label>
+                <input
+                    type="file"
+                    name="cv"
+                    accept=".jpg, .jpeg, .doc, .docx, .pdf"
+                />
+                <label for="pb">Personligt Brev</label>
+                <input
+                    type="file"
+                    name="pb"
+                    accept=".jpg, .jpeg, .doc, .docx, .pdf"
+                />
+                <label>
+                    Meddelande:
+                    <br />
+                    <textarea
+                        name="message"
+                        placeholder="Skriv din meddelande här"
+                        maxlength="500"
+                    >
+                    </textarea>
+                </label>
+
+                <button class="submit">Skicka</button>
+            </form>
+
+            <!-- footer  -->
+
+            <footer>
+                <a href="index.html"
+                    ><img
+                        class="footer-logo"
+                        src="styles/img/cropped-soodia-logo_small-2.png"
+                        alt="Soodia logo"
+                        width="170px"
+                        height="60px"
+                    />
+                </a>
+                <p>
+                    <img
+                        src="styles/img/mail-icon.png"
+                        alt="mail"
+                        width="20px"
+                        height="20px"
+                    />
+                    <a href="mailto: info@soodia.se ">info@soodia.se</a>
+                </p>
+
+                <p>
+                    <img
+                        src="styles/img/phone.png"
+                        alt="phhone"
+                        width="20px"
+                        height="20px"
+                    />
+                    +76 445 9908
+                </p>
+                <p class="adress">
+                    <a
+                        href="https://goo.gl/maps/hjrsDCFGLPuYLUxK7"
+                        target="_blank"
+                    >
+                        Hitta till oss</a
+                    >
+                </p>
+                <div class="social">
+                    <i class="face logo">
+                        <a
+                            href="https://www.facebook.com/pages/category/Local-business/Soodia-2417699748262157/"
+                            ><img
+                                src="styles/img/5279111_network_fb_social media_facebook_facebook logo_icon.png"
+                                alt="facebook logo"
+                                width="60px"
+                                height="60px"
+                        /></a>
+                    </i>
+                    <i class="linked-in logo">
+                        <a href="https://www.linkedin.com/company/soodia"
+                            ><img
+                                src="styles/img/4747495_linked in_social media_networking_icon.png"
+                                alt="linked in logo"
+                                width="60px"
+                                height="60px"
+                        /></a>
+                    </i>
+                    <i class="messenger logo">
+                        <a href="http://m.me/Soodia-2417699748262157/"
+                            ><img
+                                src="styles/img/5279115_chat bubble_facebook_messenger_messenger logo_icon.png"
+                                alt="linked in logo"
+                                width="60px"
+                                height="60px"
+                        /></a>
+                    </i>
+                </div>
+            </footer>
+        </main>
+        <script src="js/menu.js"></script>
+        <script src="js/main-2.js"></script>
+
+        <script>
+            alert(
+                "The form submission is handled via formspree.io, right now its on the free plan with limited amount of submissions and file upload is disabled."
+            );
+        </script>
+    </body>
+</html>
