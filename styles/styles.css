@@ -719,12 +719,12 @@ input[type="file"] {
 
 .read-more-btn {
   border: solid white 1px;
-  border-radius: 3px;
+  border-radius: 30px;
   padding: 3px;
   background-color: transparent;
   cursor: pointer;
   align-self: center;
-  width: 150px;
+  width: 80px;
   color: white;
   font-weight: 700;
 }
