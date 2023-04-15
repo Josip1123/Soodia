@@ -26,17 +26,21 @@
     height: 600px;
   }
 
+  .banner-content{
+    margin-top: 80px;
+  }
+
   .skiljer {
-    margin-bottom: -50px;
+    grid-column: 2/7;
   }
 
-  .skiljer-h2 {
-    margin-top: 160px;
-  }
-
+.skiljer__picture-container {
+  grid-column: 7/10;
+}
 
   .skiljer__picture {
-    width: 500px;
+    width: 550px;
+    margin-left: 50px;
   }
 
   .counters {

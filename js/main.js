@@ -17,7 +17,7 @@ function slideShow() {
 
 setInterval(slideShow, interval);
 
-window.onload = slideShow;
+window.onload = slideShow();
 
 // Intersection Observer -> Counter
 
@@ -73,7 +73,7 @@ const observer = new IntersectionObserver((entries) => {
             function secondCounterCounting() {
                 count2 += secondIncrement;
                 document.querySelector(".counter-number2").innerHTML =
-                    count2 + " +";
+                `${count2} +`;
 
                 if (count2 >= SECOND_COUNTER_FINAL_NUMBER) {
                     clearInterval(secondInterval);
@@ -82,7 +82,7 @@ const observer = new IntersectionObserver((entries) => {
             function thirdCounterCounting() {
                 count3 += thirdIncrement;
                 document.querySelector(".counter-number3").innerHTML =
-                    count3 + " +";
+                `${count3} +`;
 
                 if (count3 >= THIRD_COUNTER_FINAL_NUMBER) {
                     clearInterval(thirdInterval);
