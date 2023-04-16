@@ -107,8 +107,10 @@ const iframe = document.querySelector(".iframe")
 const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            iframe.classList.toggle("show");
+            iframe.classList.add("show");
             observer.unobserve(entry.target);
+        } else {
+            iframe.classList.remove("show");
         }
     });
 }, options);
