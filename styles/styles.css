@@ -498,6 +498,8 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
 }
 
 .faq-title p {
