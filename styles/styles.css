@@ -232,6 +232,10 @@ p {
   max-width: 500px;
 }
 
+.skiljer p {
+  text-indent: 30px;
+}
+
 .skiljer-h2 {
   background-color: none;
   margin-bottom: 50px;
@@ -481,6 +485,7 @@ footer a:hover {
 
 .faq-intro p {
   margin-top: 30px;
+  text-indent: 30px;
 }
 
 .faq-img {
@@ -657,6 +662,7 @@ input[type="file"] {
 
 .jobba-med-oss h2 {
   font-family: 'Raleway', sans-serif;
+  font-size: 36px;
 }
 
 .jobba-med-oss p {
@@ -680,6 +686,10 @@ input[type="file"] {
   align-items: center;
 }
 
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
 
 .contact-img {
   border-radius: 50%;
@@ -701,6 +711,7 @@ input[type="file"] {
 .soodia-contact h2 {
   margin: 0 0 20px 30px;
   font-family: 'Raleway', sans-serif;
+  font-size: 36px;
 }
 
 .soodia-contact p {
