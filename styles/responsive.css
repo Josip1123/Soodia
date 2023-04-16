@@ -28,6 +28,7 @@
 
   .banner-content{
     margin-top: 80px;
+    grid-column: 2/12;
   }
 
   .skiljer {
@@ -91,21 +92,22 @@
     display: flex;
     justify-content: center;
     background-position: 40% 100%;
-    height: 600px;
+    height: 700px;
   }
 
   .banner-content {
     max-width: 100%;
-    margin: 70px 0px 50px 20px;
+    margin: 100px 0px 50px 20px;
   }
 
   .banner-content p {
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    padding: 10px 10px 10px 0px;
   }
 
   /* skiljer */
   .skiljer {
-    margin: -100px 20px 0 20px;
+    margin: 50px 20px 0 20px;
     max-width: 550px;
     align-self: center;
   }
@@ -202,7 +204,7 @@ form {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin-bottom: 10px;
+
     width: 100%;
   }
 
@@ -258,7 +260,7 @@ form {
 
   .banner-grid {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     background-position: 40% 100%;
     height: 500px;
     width: 100%;
@@ -269,10 +271,10 @@ form {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    margin: 0 0 0 20px;
     padding: 0;
     height: 500px;
     margin-top: 10px;
+    margin-left: 30px;
   }
 
   h1 {
@@ -291,7 +293,6 @@ form {
     font-size: 18px;
     line-height: 1.75;
     font-weight: 400;
-    margin: 0 20px 0 20px;
   }
 
   .contact-in-text a {
@@ -308,12 +309,12 @@ form {
 
   .banner-h2 {
     margin-bottom: -30px;
+    max-width: 90%;
   }
 
   .banner-content p {
     align-self: flex-start;
     margin-top: -30px;
-    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .banner-btn,
@@ -323,21 +324,21 @@ form {
 
   .btn-container {
     align-self: flex-start;
-    margin: 0 0 20px 0;
+    margin: -40px 0 20px 0;
   }
 
   /* facebook and socials */
 
   
-  .facebook {
+  .facebook-embeded {
     display: none;
   }
 
   /* counters */
 
-  .resulatat-main {
-    width: 550px;
-    padding-top: 0px;
+  #results {
+
+    margin-top: -100px;
   }
 
   .counters {
@@ -358,11 +359,16 @@ form {
 
   .jobba-med-oss {
     margin-top: 30px;
+    padding: 5px
   }
 
+  
+
   form {
-    width: 100%;
+    width: 90%;
     border-radius: 0;
+    display: flex;
+    align-self: center;
   }
 
   /* footer */
@@ -384,19 +390,19 @@ form {
     display: none;
   }
 
-  .skiljer__picture-2 {
-    max-width: 320px;
-    height: 150px;
-    margin-left: -300px;
-    display: none;
-  }
 
   .skiljer-h2 {
-    margin: 100px 0 20px 20px;
+    margin: 0px 10px 20px 20px;
   }
 
   .skiljer {
-    margin-bottom: -150px;
+    margin: 0;
+    margin-top: 80px;
+  }
+
+  .skiljer p {
+    margin: 20px 20px 20px 20px;
+    text-indent: none !important;
   }
 
 
@@ -409,13 +415,19 @@ form {
   .faq {
     margin: 0px;
     align-self: flex-start;
+    margin-left: 10px;
+  }
+
+  .faq-title p {
+    padding: 0 40px;
   }
 
   .before-faq h2 {
     max-width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
+    align-self: center;
   }
 
   .faq-intro {
@@ -424,11 +436,17 @@ form {
     align-items: center;
     margin-bottom: 20px;
     margin-right: 0;
+    padding: 15px;
   }
 
   .faq-img {
     display: none;
   }
+
+  .answer {
+    padding-right: 10px;
+  }
+
 
   .soodia-contact {
     align-self: center;
@@ -455,7 +473,7 @@ form {
 
   .edu {
     align-self: flex-start;
-    margin: 20px 10px 15px 20px;
+    margin: 20px 10px 15px 0px;
   }
 
   .contacts-1,
