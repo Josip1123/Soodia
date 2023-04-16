@@ -98,8 +98,21 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(mainCounters);
 
 
+// fb iframe defer
+
+const footer = document.querySelector(".facebook-feed-and-contact");
+const iframe = document.querySelector(".iframe")
 
 
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            iframe.classList.toggle("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, options);
 
+observer2.observe(footer);
 
 

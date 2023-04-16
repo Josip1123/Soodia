@@ -348,6 +348,14 @@ p {
   margin-top: 120px;
 }
 
+iframe {
+  display: none;
+}
+
+iframe.show {
+  display: block;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
